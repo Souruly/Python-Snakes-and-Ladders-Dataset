@@ -60,7 +60,7 @@ def saveGames():
     saveGames = games.copy()
     headings = ['Game Length','Player Movement','Die Rolls', 'Snakes and Ladders']
     saveGames.insert(0,headings)
-    with open('snakesAndLadders.csv', 'w', newline='') as gameFile:
+    with open('snakesAndLaddersDataset.csv', 'w', newline='') as gameFile:
         writer = csv.writer(gameFile)
         writer.writerows(saveGames)
 
